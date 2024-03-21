@@ -1,0 +1,56 @@
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url(/bijlagen/achtergrond.jpg);
+  background-size: 100%;
+  display: grid;
+  grid-template-areas:
+    "header header  header"
+    "main main main"
+    "footer footer footer";
+  margin: 0px;
+}
+
+header {
+  grid-area: header;
+}
+footer {
+  grid-area: footer;
+}
+
+main {
+  background-color: #d295fad3;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "cat cat cat"
+    "foto nieuwsbrief nieuwsbrief"
+    "info producten producten";
+  grid-template-columns: 30% 40% 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+section.categorieën {
+  grid-area: cat;
+}
+
+section.fotoshop {
+  grid-area: foto;
+}
+
+section.Nieuwsbrief {
+  grid-area: nieuwsbrief;
+}
+
+section.info {
+  grid-area: info;
+}
+
+section.producten {
+  grid-area: producten;
+}

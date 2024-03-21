@@ -1,0 +1,49 @@
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url(/bijlagen/achtergrond.jpg);
+  background-size: 100%;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  margin: 0px;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  background-color: #d295fad3;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "foto1 detail1"
+    "foto2 detail2"
+    "foto3 detail3"
+    "foto4 detail4"
+    "foto5 detail5"
+    "foto6 detail6"
+    "foto7 detail7"
+    "foto8 detail8"
+    "foto9 detail9"
+    "foto10 detail10"
+    "foto11 detail11"
+    "foto12 detail12";
+  grid-template-columns: 200px;
+}
+
+section {
+  border-top: solid rgba(63, 63, 63, 0.522);
+  border-right: solid rgba(63, 63, 63, 0.522);
+}
+
+footer {
+  grid-area: footer;
+}

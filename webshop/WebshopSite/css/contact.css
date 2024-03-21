@@ -1,0 +1,55 @@
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url(/bijlagen/achtergrond.jpg);
+  background-size: 100%;
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "main main"
+    "footer footer";
+  margin: 0;
+}
+
+header {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+main {
+  background-color: #d295fad3;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "map info"
+    "contact contact";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 40%;
+}
+
+div#map {
+  grid-area: map;
+}
+
+section.info {
+  color: white;
+  text-align: center;
+  grid-area: info;
+}
+
+section.contact {
+  grid-area: contact;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+}

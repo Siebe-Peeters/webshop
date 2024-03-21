@@ -1,0 +1,62 @@
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url(/bijlagen/achtergrond.jpg);
+  background-size: 100%;
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "main main"
+    "footer footer";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 70% 10%;
+  margin: 0;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  background-color: #d295fad3;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "fotos info"
+    "vergelijking vergelijking";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60% 40%;
+}
+
+main section.fotosProduct {
+  grid-area: fotos;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+main section.product_informatie {
+  color: white;
+  grid-area: info;
+}
+
+main section.vergelijking {
+  text-align: center;
+  grid-area: vergelijking;
+  color: white;
+}
+
+main section.vergelijking ul {
+  justify-content: center;
+  gap: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  grid-area: footer;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poké point home</title>
+    <link rel="icon" href="/bijlagen/logo trans.png">
+    <link rel="reset" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/sections.css" />
+  </head>
+  <body>
+    <header>
+      <!-- hier logo -->
+      <nav>
+        <a href="/home.html">
+          <picture>
+            <img class="logo" src="/bijlagen/logo trans.png" alt="Poké point" height="130" width="130px" />
+          </picture>
+        </a>
+        <ul class="HCS"> <!-- geen li's, dus ul is niet nodig -->
+          <a class="Home" href="home.html">Home</a>
+          <a class="Contact" href="contact.html">Contact</a>
+          <a class="Shop" href="shop.html">Shop</a>
+          <button class="winkelwagen">
+            <img
+              src="/bijlagen/cart wit.png"
+              alt="Cart"
+              width="20px"
+              height="20px"
+            />Winkelwagen
+          </button>
+        </ul>
+        <!-- hier stopt nav al -->
+        <h1>PokePoint: Your Gateway to Pokémon Paradise!</h1>
+        <ul class="Zoekbalk"> <!-- ul is voor lijsten -->
+          <input class="zoeken" type="text" placeholder="zoeken.." />
+          <input class="knopZoeken" type="button" value="Zoek" />
+        </ul>
+      </nav>
+    </header>
+    <main class="shop"> <!-- home of shop? -->
+      <section class="categorieën"> <!-- NL of EN -->
+        <h1>categorieën</h1>
+        <p>vind hier de meest gekochte categorieën</p>
+        <ul class="fotoscat">
+          <a href="/catetb.html">
+            <img
+              src="/bijlagen/etbs shop.jpg"
+              alt="etbs"
+              width="200px"
+              height="200px"
+            />
+            <figcaption>elite trainer boxen</figcaption>
+          </a>
+          <a href="/catPack.html">
+            <img
+              src="/bijlagen/pacs shop.jpg"
+              alt="packs"
+              width="200px"
+              height="200px"
+            />
+            <figcaption>losse pakjes</figcaption>
+          </a>
+          <a href="/catTin.html">
+            <img
+              src="/bijlagen/tins pokemon-fotor-bg-remover-20240314141531.png"
+              alt="tins"
+              width="200px"
+              height="200px"
+            />
+            <figcaption>tins</figcaption>
+          </a>
+
+          <a href="/catExtra.html">
+            <img
+              src="/bijlagen/sleeve.webp"
+              alt="sleeve"
+              width="200px"
+              height="200px"
+            />
+            <figcaption>extras</figcaption>
+          </a>
+        </ul>
+      </section>
+
+      <section class="fotoshop">
+        <img src="/bijlagen/logo trans.png" alt="PokePoint" height="200px" />
+      </section>
+
+      <section class="Nieuwsbrief">
+        <h1>Nieuwsbrief</h1>
+        <ul class="Nieuwsbrief">
+          <input class="E-mail" type="text" placeholder="E-mail.." />
+          <input class="Abboneer" type="button" value="Abboneer" />
+        </ul>
+      </section>
+
+      <section class="info">
+        <h3>Poké point</h3> <!-- titelniveau's bekijken -->
+        <p>
+          Poké Point is dé ultieme bestemming voor elke Pokémon-liefhebber.
+          Ontdek een schat aan Pokémon-kaarten, doe mee aan toernooien en maak
+          nieuwe vrienden. Verken onze collectie van verzamelbare figuren en
+          knuffels, en laat je liefde voor Pokémon zien met onze kleding en
+          accessoires. Maar Poké Point is meer dan een winkel; het is een
+          gemeenschap waar gelijkgestemden samenkomen. Stap binnen en beleef de
+          magie van Pokémon!
+        </p>
+      </section>
+
+      <section class="producten">
+        <h2>best sellers</h2>
+        <ul>
+          <!-- figcaption kan enkel in figure -->
+          <a href="/product151.html">
+            <figure>
+              <img src="/bijlagen/151booster.webp" alt="151 booster" width="130px" height="130px" />
+              <figcaption>151 booster pack</figcaption>
+            </figure>
+          </a>
+
+          <a href="/productPAF.html"
+            ><img
+              src="/bijlagen/paldean-fathes.webp"
+              alt="paldean fathes booster"
+              width="130px"
+              height="130px"
+            />
+            <figcaption>paldean fates booster pack</figcaption>
+          </a>
+          <a href="/productPAFetb.html"
+            ><img
+              src="/bijlagen/paldeanEtb.webp"
+              alt="paldean etb"
+              width="130px"
+              height="130px"
+            />
+            <figcaption>paldean fates elite trainer box</figcaption>
+          </a>
+
+          <a href="/productGirTin.html"
+            ><img
+              src="/bijlagen/gira tin.webp"
+              alt="giratina tin"
+              width="130px"
+              height="130px"
+            />
+            <figcaption>giratina tin</figcaption></a
+          >
+          </a>
+          <a href="/productSleevW.html"
+            ><img
+              src="/bijlagen/sleeve.webp"
+              alt="sleeve"
+              width="130px"
+              height="130px"
+            />
+            <figcaption>witte sleeves</figcaption></a
+          >
+          <a href="/productToploader.html"
+            ><img
+              src="/bijlagen/toploader.webp"
+              alt="toploader"
+              width="130px"
+              height="130px"
+            />
+            <figcaption>toploaders</figcaption></a
+          >
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="HCSfoot">
+        <a class="Home" href="home.html">Home</a>
+        <a class="Contact" href="contact.html">Contact</a>
+        <a class="Shop" href="shop.html">Shop</a>
+      </ul>
+      <p>&copy; Poké Point</p>
+    </footer>
+  </body>
+</html>
